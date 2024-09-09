@@ -1,7 +1,7 @@
 function kakaoMap(){
 var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
     mapOption = { 
-        center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+        center: new kakao.maps.LatLng(37.274265, 127.024635), // 지도의 중심좌표
         level: 10 // 지도의 확대 레벨 
     }; 
 
@@ -26,7 +26,7 @@ if (navigator.geolocation) {
     
 } else { // HTML5의 GeoLocation을 사용할 수 없을때 마커 표시 위치와 인포윈도우 내용을 설정합니다
     
-    var locPosition = new kakao.maps.LatLng(33.450701, 126.570667),    
+    var locPosition = new kakao.maps.LatLng(37.274265, 127.024635),    
         message = 'geolocation을 사용할수 없어요..'
         
     displayMarker(locPosition, message);
